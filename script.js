@@ -11,3 +11,16 @@ if (loginForm) {
         }
     });
 }
+
+// Hamburger Menu Toggle
+function toggleMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const hamburger = document.querySelector('.hamburger');
+
+    if (navMenu) {
+        navMenu.classList.toggle('active');
+    }
+    if (hamburger) {
+        hamburger.classList.toggle('active');
+    }
+}

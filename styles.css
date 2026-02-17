@@ -337,8 +337,69 @@ body {
     font-weight: bold;
 }
 
-/* Responsive */
+/* Responsive - Mobile */
 @media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 15px;
+    }
+
+    .nav-brand {
+        gap: 10px;
+    }
+
+    .nav-logo {
+        height: 40px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero-overlay h1 {
+        font-size: 32px;
+        padding: 0 20px;
+    }
+
+    .hero-overlay p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    /* Login */
+    .login-box {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+
+    /* Tables */
     .grades-table {
         font-size: 12px;
     }
@@ -348,12 +409,94 @@ body {
         padding: 10px 5px;
     }
 
+    .course-name {
+        font-size: 11px;
+    }
+
     .page-header h1 {
         font-size: 28px;
     }
 
     .page-header h2 {
         font-size: 18px;
+    }
+
+    /* Content Container */
+    .content-container {
+        padding: 20px 10px;
+    }
+
+    /* Exam Tables */
+    .exam-table {
+        font-size: 11px;
+    }
+
+    .exam-table th,
+    .exam-table td {
+        padding: 8px 4px;
+    }
+
+    .exam-type-title {
+        font-size: 20px;
+    }
+
+    .exam-notes {
+        padding: 15px;
+        margin: 20px 10px;
+    }
+
+    .exam-notes h3 {
+        font-size: 16px;
+    }
+
+    .exam-notes li {
+        font-size: 13px;
+    }
+
+    /* Schedule Table */
+    .schedule-table {
+        font-size: 11px;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 8px 4px;
+    }
+
+    .class-info strong {
+        font-size: 12px;
+    }
+
+    .class-info span {
+        font-size: 10px;
+    }
+}
+
+/* Responsive - Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+        gap: 30px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 40px;
+    }
+
+    .hero-overlay p {
+        font-size: 20px;
+    }
+
+    .grades-table {
+        font-size: 13px;
+    }
+
+    .schedule-table {
+        font-size: 12px;
+    }
+
+    .exam-table {
+        font-size: 13px;
     }
 }
 
@@ -507,22 +650,118 @@ body {
     background: #e3f2fd;
 }
 
-/* Responsive */
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    .schedule-table {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-brand {
+        flex: 1;
+    }
+
+    .nav-logo {
+        height: 40px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        order: 3;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu a {
+        padding: 15px;
+        border-radius: 0;
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .hero-overlay h1 {
+        font-size: 28px;
+    }
+
+    .hero-overlay p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    .login-box {
+        margin: 20px;
+    }
+
+    .grades-table {
         font-size: 11px;
     }
 
-    .schedule-table th,
-    .schedule-table td {
+    .grades-table th,
+    .grades-table td {
         padding: 8px 4px;
     }
 
-    .class-info strong {
-        font-size: 12px;
+    .page-header h1 {
+        font-size: 24px;
     }
 
-    .class-info span {
-        font-size: 10px;
+    .page-header h2 {
+        font-size: 16px;
     }
 }
