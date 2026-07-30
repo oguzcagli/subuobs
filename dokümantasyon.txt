@@ -1,0 +1,51 @@
+PROJE DOKÜMANTASYONU - Öğrenci Bilgi Sistemi
+============================================
+Bu dosyada projede yapılan ekleme ve değişiklikler tarih sırasıyla kaydedilir.
+Yeni kayıtlar dosyanın sonuna eklenir, önceki kayıtlar silinmez.
+
+
+--------------------------------------------
+Tarih: 31.07.2026
+Konu: 2025-2026 Bahar dönemi not sayfasının eklenmesi
+--------------------------------------------
+
+1) notlar-2025-2026-bahar.html (YENİ DOSYA)
+   - 2025-2026 Bahar dönemi not sayfası oluşturuldu.
+   - Yapı notlar-2025-2026-guz.html ile birebir aynı: navbar, hamburger menü,
+     nav-menu#navMenu, content-container, page-header, grades-table-container.
+   - Başlıklar: "Not Bilgisi" / "2025-2026 Bahar Dönemi".
+   - Tabloya 7 ders yazıldı:
+       Enerji Sistemleri (FF)
+       Robotik ve Otomasyon (BB)
+       Isıtma, Havalandırma ve İklimlendirme (FF)
+       Bitirme Projesi II (AA)
+       Hesaplamalı Akışkanlar Dinamiği (FF)
+       Hidrolik ve Pnömatik Sistemler (CC)
+       İçten Yanmalı Motorlar (FF)
+   - 4 ders FF (başarısız), 3 ders başarılı.
+   - FF derslerinin final notları: 45, 41, 40, 47 (40-47 aralığında, birbirinden farklı).
+
+2) styles.css (DEĞİŞTİRİLDİ)
+   - .grade-f sınıfı eklendi: background #f8d7da, color #721c24.
+   - Sınıf .grade-c tanımından sonra yerleştirildi.
+   - Amaç: FF hücrelerinin kırmızı zeminle görünmesi.
+   - Mevcut .grade-a, .grade-b, .grade-c tanımlarına dokunulmadı.
+
+3) Dönem açılır menüsü (10 DOSYADA DEĞİŞTİRİLDİ)
+   - Yeni bağlantı listenin ilk sırasına eklendi:
+     <a href="notlar-2025-2026-bahar.html">2025-2026 BAHAR DÖNEMİ</a>
+   - Güncellenen dosyalar: home.html, ders-programi.html, sinav-takvimi.html,
+     notlar-2022-2023-guz.html, notlar-2022-2023-bahar.html,
+     notlar-2023-2024-guz.html, notlar-2023-2024-bahar.html,
+     notlar-2024-2025-guz.html, notlar-2024-2025-bahar.html,
+     notlar-2025-2026-guz.html
+   - index.html menü içermediği için değiştirilmedi.
+
+4) script.js (DEĞİŞTİRİLMEDİ)
+   - Sayfalar statik; not verisi HTML içinde tutuluyor, hesaplama yapılmıyor.
+
+5) DOĞRULAMA
+   - Yeni sayfada 7 ders satırı, 4 adet FF, 3 adet geçer notu mevcut.
+   - Her satırın ortalaması dört notun (quiz, ödev, vize, final) aritmetik
+     ortalamasına eşit.
+   - 11 dosyada dönem menüsü bağlantı listesi ve sırası birebir aynı.

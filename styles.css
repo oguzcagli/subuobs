@@ -305,6 +305,12 @@ body {
     color: #856404;
 }
 
+/* Başarısız not (FF/FD) rozeti */
+.grade-f {
+    background: #f8d7da;
+    color: #721c24;
+}
+
 /* Dönem Özeti */
 .semester-summary {
     max-width: 1200px;
